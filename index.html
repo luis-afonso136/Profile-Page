@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <div id="particles"></div>
+    <section>
+        <img src="./assets/Man.jpg" alt="Profile Image">
+    </section>
+    <section>
+        <ul class="menu">
+            <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+            <li style="--i: 0; --clr: #ff2972">
+                <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 1; --clr: #fee800">
+                <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 2; --clr: #04fc43">
+                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 3; --clr: #fe00f1">
+                <a href="#"><ion-icon name="key-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 4; --clr: #00b0fe">
+                <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 5; --clr: #fea600">
+                <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 6; --clr: #a529ff">
+                <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </li>
+            <li style="--i: 7; --clr: #01bdab">
+                <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <div class="container">
+            <div id="card-description">
+                <div class="about">
+                    <h1><i class="ri-edit-box-line"></i> About Me:</h1>
+                    <br>
+                    <p>Hello! I'm a web development student, passionate about creating custom websites to meet a variety
+                        of personal needs. My website creation journey started as a hobby and quickly evolved into a
+                        passion.</p>
+                </div>
+
+                <div class="description">
+                    <p><i class="ri-earth-line"></i> Country: [Your Country]</p>
+                    <p><i class="ri-building-line"></i> City: [Your City]</p>
+                    <p><i class="ri-briefcase-line"></i> Job: [Your Job]</p>
+                    <p><i class="ri-phone-line"></i> Number: [Your Phone Number]</p>
+                    <p><i class="ri-mail-line"></i> Mail: [Your Email Address]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="toggleSound">
+        <source src="audio/close.mp3" type="audio/mpeg">
+        <source src="audio/close.ogg" type="audio/ogg">
+    </audio>
+
+    <audio id="openSound">
+        <source src="audio/open.mp3" type="audio/mpeg">
+        <source src="audio/open.ogg" type="audio/ogg">
+    </audio>
+
+    <audio id="hoverSound">
+        <source src="audio/beep.mp3" type="audio/mpeg">
+        <source src="audio/beep.ogg" type="audio/ogg">
+    </audio>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+<footer>
+    <hr>
+    <p class="copyright-text">Copyright &copy; 2024 made by Luis Afonso
+    </p>
+</footer>
+
+</html>
