@@ -132,9 +132,6 @@ img {
 
 #card-description {
     color: #fff;
-    border: 3px solid #4e4e4e;
-    box-shadow: 0 0 15px #fff;
-    width: 1300px;
     display: flex;
     border-radius: 30px;
     margin-top: 50px;
@@ -158,18 +155,54 @@ img {
     margin-bottom: 8px;
 }
 
-footer {
-    width: 1300px;
+.vertical-line {
+    width: 2px;
+    background-color: #fff;
+    margin: 0 20px;
+}
+
+.copyright-text{
     color: #fff;
+    margin-top: 6px;
+    margin-bottom: 8px;
 }
 
-footer p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #card-description {
+        flex-direction: column;
+    }
+
+    .vertical-line {
+        width: 100%;
+        height: 2px;
+        margin: 20px 0;
+    }
+
+    #card-description .about,
+    #card-description .description {
+        padding: 10px;
+    }
+
+    #card-description h1 {
+        font-size: 20px;
+    }
+
+    #card-description p {
+        font-size: 16px;
+    }
+
     .menu {
         width: 200px;
         height: 200px;
@@ -184,29 +217,19 @@ footer p {
     .menu a {
         width: 50px;
         height: 50px;
-        font-size: 18px;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-        margin-top: 200px;
-    }
-
-    #card-description {
-        width: 90%;
-        flex-direction: column;
-    }
-
-    footer {
-        width: 90%;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 480px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
     .menu {
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
     }
 
     .menuToggle {
@@ -218,20 +241,14 @@ footer p {
     .menu a {
         width: 40px;
         height: 40px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    img {
-        width: 150px;
-        height: 150px;
-        margin-top: 100px;
+    #card-description h1 {
+        font-size: 18px;
     }
 
-    #card-description {
-        width: 100%;
-    }
-
-    footer {
-        width: 100%;
+    #card-description p {
+        font-size: 14px;
     }
 }
